@@ -1,0 +1,15 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+android {
+    namespace 'com.lcabral.catsbyme.libs.dstools'
+}
+
+dependencies {
+
+    // Libs
+}
