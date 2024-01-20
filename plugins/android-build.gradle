@@ -1,0 +1,49 @@
+apply plugin: "com.google.dagger.hilt.android"
+apply plugin: "com.google.devtools.ksp"
+apply plugin: "kotlin-kapt"
+
+apply from: "$rootDir/plugins/kotlin-module-build.gradle"
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 34
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "$rootDir/app/proguard-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    "$rootDir/app/proguard-rules.pro",
+                    "$rootDir/app/proguard-rules-staging.pro"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    dependencies {
+        // Libs
+
+        implementation libs.bundles.defaultAndroidBundle
+        implementation libs.material
+        implementation libs.appcompat
+        implementation libs.constraintlayout
+        implementation libs.hiltAndroid
+        implementation libs.hiltNavigation
+        kapt libs.hiltCompiler
+        kapt libs.androidxHiltCompiler
+    }
+}
