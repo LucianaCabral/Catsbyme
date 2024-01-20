@@ -1,8 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 apply from: "$rootDir/plugins/android-build.gradle"
+
+def keyApiPropertiesFile = rootProject.file("$rootDir/apiKey.properties")
+def keyApiProperties = new Properties()
+keyApiProperties.load(new FileInputStream(keyApiPropertiesFile))
 
 android {
     namespace 'com.lcabral.catsbyme'
@@ -30,6 +35,15 @@ android {
     }
     kotlinOptions {
         jvmTarget = '17'
+    }
+
+    defaultConfig {
+        buildConfigField "String", "API_KEY", keyApiProperties['API_KEY']
+        buildConfigField "String", "API_URL", '"https://https://api.thecatapi.com/"'
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 }
 
