@@ -38,7 +38,7 @@ swipeRefreshLayout = "1.1.0"
 
 # Default Test
 testJunit = "4.13.2"
-testAndroidJUnitEx = "1.1.5"
+testAndroidJUnitEx = "1.1.3"
 espressoCore = "3.5.1"
 
 # Custom Test
@@ -93,13 +93,13 @@ lifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-
 lifecycleViewmodelKtx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-viewmodel" }
 loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
-pagingCommon = { module = "androidx.paging:paging-common", version.ref = "paging" }
-paginCommonKtx = { module = "androidx.paging:paging-common-ktx", version.ref = "paging" }
-pagingRuntimeKtx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "paging" }
+pagingCommon = { group = "androidx.paging", name ="paging-common", version.ref = "paging" }
+paginCommonKtx = { group = "androidx.paging", name = "paging-common-ktx" , version.ref = "paging" }
+pagingRuntimeKtx = { group = "androidx.paging",name = ":paging-runtime-ktx", version.ref = "paging" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 roomRuntime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
-roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 swipeRefreshLayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeRefreshLayout" }
 
 # Test

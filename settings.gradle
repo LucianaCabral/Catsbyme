@@ -13,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CatsByme"
-include ':app'
+include ':app',
+        ':libs:arch'

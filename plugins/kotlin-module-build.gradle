@@ -1,6 +1,7 @@
 dependencies {
     // TestLibs
     testImplementation libs.junitKtx
+    testImplementation libs.testJunit
     testImplementation libs.coroutinesTest
     testImplementation libs.kotlinTest
     testImplementation libs.mockk
