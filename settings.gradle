@@ -16,7 +16,8 @@ rootProject.name = "CatsByme"
 include ':app'
 
 // Core
-include ':core:domain'
+include ':core:data:remote',
+        ':core:domain'
 
 // Libs
 include ':libs:arch',
