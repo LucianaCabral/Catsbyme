@@ -1,0 +1,27 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+android {
+    namespace 'com.lcabral.catsbyme.features.breeds'
+}
+
+dependencies {
+    // Modules
+    implementation project(Modules.arch)
+    implementation project(Modules.dsTools)
+    implementation project(Modules.domain)
+    implementation project(Modules.remote)
+
+
+    // Libs
+    api libs.convertergson
+    api libs.gson
+    implementation libs.loggingInterceptor
+    implementation libs.okhttp
+    implementation libs.paginCommonKtx
+    implementation libs.pagingRuntimeKtx
+    implementation libs.pagingCommon
+}

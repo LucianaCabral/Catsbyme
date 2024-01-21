@@ -5,5 +5,6 @@ object Modules {
 
         // Libs
         const val arch = ":libs:arch"
+        const val dsTools = ":libs:dstools"
 
 }
