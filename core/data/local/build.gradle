@@ -1,0 +1,20 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+android {
+    namespace 'com.lcabral.catsbyme.core.data.local'
+}
+
+dependencies {
+    //Libs
+    implementation libs.room
+    implementation libs.roomRuntime
+    kapt libs.roomCompiler
+
+    // Modules
+    implementation project(Modules.arch)
+}
