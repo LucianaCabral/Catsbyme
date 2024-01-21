@@ -1,0 +1,40 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+def keyApiPropertiesFile = rootProject.file("$rootDir/apiKey.properties")
+def keyApiProperties = new Properties()
+keyApiProperties.load(new FileInputStream(keyApiPropertiesFile))
+
+android {
+    namespace 'com.lcabral.catsbyme.core.data.remote'
+
+    defaultConfig {
+        buildConfigField "String", "API_KEY", keyApiProperties['API_KEY']
+        buildConfigField "String", "API_URL", '"https://https://api.thecatapi.com/"'
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+}
+
+dependencies {
+
+    // Modules
+    implementation project(Modules.arch)
+    implementation project(Modules.domain)
+
+    // Libs
+
+    api libs.convertergson
+    api libs.gson
+    implementation libs.loggingInterceptor
+    implementation libs.okhttp
+    implementation libs.paginCommonKtx
+    implementation libs.pagingRuntimeKtx
+    implementation libs.pagingCommon
+}

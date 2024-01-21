@@ -14,3 +14,13 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CatsByme"
 include ':app'
+
+// Core
+include ':core:data:local',
+        ':core:data:remote',
+        ':core:domain'
+
+// Libs
+include ':libs:arch',
+        ':libs:dstools'
+include ':core:common:navigation'

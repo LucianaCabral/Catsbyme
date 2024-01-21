@@ -1,0 +1,13 @@
+dependencies {
+    // TestLibs
+    testImplementation libs.junitKtx
+    testImplementation libs.testJunit
+    testImplementation libs.coroutinesTest
+    testImplementation libs.kotlinTest
+    testImplementation libs.mockk
+    testImplementation libs.turbine
+    testImplementation(libs.truth) {
+        exclude group: 'androidx.tracing', module: 'tracing'
+        exclude group: 'androidx.annotation', module: 'annotation-experimental'
+    }
+}

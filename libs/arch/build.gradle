@@ -1,0 +1,23 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+
+android {
+    namespace 'com.lcabral.catsbyme.libs.arch'
+
+}
+
+dependencies {
+    // Libs
+    implementation libs.lifecycleViewmodelKtx
+    implementation libs.convertergson
+    implementation libs.retrofit
+    implementation libs.gson
+    implementation libs.mockwebServer
+    implementation libs.kotlinReflect
+    implementation libs.coroutinesTest
+}

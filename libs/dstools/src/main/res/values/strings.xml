@@ -1,0 +1,23 @@
+<resources>
+    <string name="breed_overview">Overview</string>
+    <string name="breed_original_language">Original language: %s</string>
+    <string name="breed_vote_count">Vote: %s</string>
+    <string name="breed_vote_average">Vote average: %s</string>
+    <string name="breed_release">Release: </string>
+    <string name="breed_original_title">Original title: </string>
+    <string name="breed_adult">Adult: </string>
+    <string name="breed_popularity">Popularity: </string>
+    <string name="breed_image_breed">image_breed</string>
+    <string name="breed_about_breed">About breed</string>
+    <string name="breed_video">Video: %s </string>
+    <string name="breed_separador_details">DETAILS</string>
+    <string name="breed_more_details">MORE DETAILS</string>
+    <string name="yes_have">yes</string>
+    <string name="no_have">No</string>
+    <string name="breed_more_details_about_breeds">More details about breeds</string>
+    <string name="breed_uri_image">https://image.tmdb.org/t/p/w500</string>
+    <string name="ds_dialog_title_feedback_error">Ops! Error</string>
+    <string name="ds_dialog_feedback_message_error">Please wait a little bit!</string>
+    <string name="ds_dialog_icon_cancel">Cancel</string>
+    <string name="ds_dialog_feedback_error_canceled">Cancelled</string>
+</resources>
