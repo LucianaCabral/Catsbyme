@@ -24,8 +24,17 @@ android {
 
 dependencies {
 
-  // Libs
-    implementation libs.retrofit
-    implementation libs.gson
-    implementation libs.convertergson
+    // Modules
+    implementation project(Modules.arch)
+    implementation project(Modules.domain)
+
+    // Libs
+
+    api libs.convertergson
+    api libs.gson
+    implementation libs.loggingInterceptor
+    implementation libs.okhttp
+    implementation libs.paginCommonKtx
+    implementation libs.pagingRuntimeKtx
+    implementation libs.pagingCommon
 }
