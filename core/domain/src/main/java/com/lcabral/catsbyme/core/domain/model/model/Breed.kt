@@ -1,4 +1,4 @@
-package com.lcabral.catsbyme.core.domain.model
+package com.lcabral.catsbyme.core.domain.model.model
 
 data class Breed(
     val adaptability: Int,
