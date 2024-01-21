@@ -23,3 +23,4 @@ include ':core:data:local',
 // Libs
 include ':libs:arch',
         ':libs:dstools'
+include ':core:common:navigation'

@@ -1,0 +1,18 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+android {
+    namespace 'com.lcabral.catsbyme.core.common.navigation'
+
+}
+
+dependencies {
+    // Libs
+
+    // Modules
+
+}
