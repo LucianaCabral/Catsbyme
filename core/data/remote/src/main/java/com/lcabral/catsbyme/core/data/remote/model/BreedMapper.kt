@@ -19,7 +19,7 @@ private fun ResultResponse?.toBreed(): Breed {
         description = this?.description.orEmpty(),
         dogFriendly = this?.dogFriendly.orZero(),
         healthIssues = this?.healthIssues.orZero(),
-        id = this?.id.orZero(),
+        id = this?.id.orEmpty(),
         intelligence = this?.intelligence.orZero(),
         lifeSpan = this?.lifeSpan.orEmpty(),
         origin = this?.origin.orEmpty(),

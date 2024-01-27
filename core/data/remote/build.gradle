@@ -35,6 +35,6 @@ dependencies {
     implementation libs.loggingInterceptor
     implementation libs.okhttp
     implementation libs.paginCommonKtx
-    implementation libs.pagingRuntimeKtx
+    api libs.pagingRuntimeKtx
     implementation libs.pagingCommon
 }

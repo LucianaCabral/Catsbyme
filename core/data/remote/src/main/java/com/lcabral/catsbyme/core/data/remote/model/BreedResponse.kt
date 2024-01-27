@@ -23,7 +23,7 @@ data class BreedResponse(
         @SerializedName("health_issues")
         val healthIssues: Int?,
         @SerializedName("id")
-        val id: Int?,
+        val id: String?,
         @SerializedName("image")
         val image: Image?,
         @SerializedName("intelligence")
