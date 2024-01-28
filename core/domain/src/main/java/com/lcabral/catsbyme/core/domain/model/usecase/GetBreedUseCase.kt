@@ -2,6 +2,7 @@ package com.lcabral.catsbyme.core.domain.model.usecase
 
 import androidx.paging.PagingData
 import com.lcabral.catsbyme.core.domain.model.model.Breed
+
 import com.lcabral.catsbyme.core.domain.model.repository.BreedRepository
 import kotlinx.coroutines.flow.Flow
 

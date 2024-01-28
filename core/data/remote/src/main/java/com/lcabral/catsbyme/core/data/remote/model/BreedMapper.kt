@@ -1,16 +1,14 @@
 package com.lcabral.catsbyme.core.data.remote.model
 
-import com.lcabral.catsbyme.core.data.remote.model.BreedResponse.ResultResponse
 import com.lcabral.catsbyme.core.domain.model.model.Breed
 import com.lcabral.catsbyme.libs.arch.extensions.orZero
 
-fun List<ResultResponse?>?.toBreeds(): List<Breed> {
-    return this?.map {
+fun List<BreedResponse>.toBreeds() =
+    this.map {
         it.toBreed()
-    }.orEmpty()
-}
+    }
 
-private fun ResultResponse?.toBreed(): Breed {
+private fun BreedResponse?.toBreed(): Breed {
     return Breed(
         adaptability = this?.adaptability.orZero(),
         affectionLevel = this?.affectionLevel.orZero(),
@@ -28,6 +26,8 @@ private fun ResultResponse?.toBreed(): Breed {
         temperament = this?.temperament.orEmpty(),
         energyLevel = this?.energyLevel.orZero(),
         name = this?.name.orEmpty(),
-        image = this?.image?.url.orEmpty()
+        image = this?.image?.url.orEmpty(),
+        referenceImageId = this?.referenceImageId.orEmpty()
     )
 }
+

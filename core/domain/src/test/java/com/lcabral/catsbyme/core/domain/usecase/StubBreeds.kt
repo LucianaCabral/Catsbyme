@@ -20,7 +20,7 @@ internal object StubBreeds {
                 dogFriendly = 1,
                 energyLevel = 1,
                 healthIssues = 1,
-                id = 2,
+                id = "adsfs",
                 image = "cat.jpg",
                 intelligence = 1,
                 lifeSpan = "10-12 years",
@@ -29,6 +29,7 @@ internal object StubBreeds {
                 socialNeeds = 1,
                 temperament = "friendly",
                 vocalisation = 1,
+                referenceImageId = "jpg"
             ),
             Breed(
                 adaptability = 1,
@@ -44,7 +45,7 @@ internal object StubBreeds {
                 dogFriendly = 1,
                 energyLevel = 1,
                 healthIssues = 1,
-                id = 1,
+                id = "WTETET",
                 image = "cat.jpg",
                 intelligence = 1,
                 lifeSpan = "10-12 years",
@@ -53,7 +54,7 @@ internal object StubBreeds {
                 socialNeeds = 1,
                 temperament = "friendly",
                 vocalisation = 1,
-
+                referenceImageId = "jpg"
                 )
         )
     }
