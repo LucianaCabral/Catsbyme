@@ -6,7 +6,7 @@ import com.lcabral.catsbyme.core.data.remote.model.toBreeds
 import com.lcabral.catsbyme.core.domain.model.model.Breed
 import com.lcabral.catsbyme.features.breeds.data.source.BreedDataSource
 
-internal class BreedPagingDataSource (
+internal class BreedPagingDataSource(
     private val remoteDataSource: BreedDataSource
 ) : PagingSource<Int, Breed>() {
 
@@ -14,13 +14,12 @@ internal class BreedPagingDataSource (
         return runCatching {
             val limit = params.loadSize
             val page = params.key ?: 1
-            val response = remoteDataSource.getBreeds(limit, page)
-            val breeds = response.breeds
+            val response = remoteDataSource.getBreeds(limit, page).toBreeds()
 
             LoadResult.Page(
-                data = breeds.toBreeds(),
+                data = response,
                 prevKey = if (page == 1) null else page.dec(),
-                nextKey = if (breeds.isNullOrEmpty()) null else page.inc()
+                nextKey = if (response.isEmpty()) null else page.inc()
             )
 
         }.getOrElse {

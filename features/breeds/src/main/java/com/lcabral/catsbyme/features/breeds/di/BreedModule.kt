@@ -1,4 +1,4 @@
-package com.lcabral.catsbyme.features.breeds.data.di
+package com.lcabral.catsbyme.features.breeds.di
 
 import androidx.paging.PagingConfig
 import com.lcabral.catsbyme.core.data.remote.network.HttpClient
