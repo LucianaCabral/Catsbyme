@@ -43,6 +43,8 @@ android {
         implementation libs.constraintlayout
         implementation libs.hiltAndroid
         implementation libs.hiltNavigation
+        implementation libs.navigation
+        implementation libs.navigationUi
         kapt libs.hiltCompiler
         kapt libs.androidxHiltCompiler
     }

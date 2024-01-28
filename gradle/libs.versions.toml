@@ -27,10 +27,12 @@ lifecycle-viewmodel = "2.6.2"
 kotlinJdk8 = "1.8.20"
 kotlinx-serialization-json = "1.4.1"
 kotlin-reflect = "1.8.21"
+lottie = "5.2.0"
 retrofit = "2.9.0"
 converter-gson = "2.9.0"
 okhttp = "4.11.0"
 koin = "2.2.3"
+navigation-ui = "2.5.2"
 navigation = "2.5.2"
 paging = "3.2.1"
 room = "2.5.2"
@@ -88,14 +90,16 @@ koinScope = { group = "io.insert-koin", name = "koin-androidx-scope", version.re
 koinViewModel = { group = "io.insert-koin", name = "koin-androidx-viewmodel", version.ref = "koin" }
 kotlinReflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin-reflect" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+navigationUi = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
 lifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-viewmodel" }
 lifecycleViewmodelKtx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-viewmodel" }
 loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+lottie = { group = "com.airbnb.android", name = "lottie", version.ref ="lottie"}
+navigation = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 pagingCommon = { group = "androidx.paging", name ="paging-common", version.ref = "paging" }
 paginCommonKtx = { group = "androidx.paging", name = "paging-common-ktx" , version.ref = "paging" }
-pagingRuntimeKtx = { group = "androidx.paging",name = ":paging-runtime-ktx", version.ref = "paging" }
+pagingRuntimeKtx = { group = "androidx.paging",name = "paging-runtime-ktx", version.ref = "paging" }
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 roomRuntime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
