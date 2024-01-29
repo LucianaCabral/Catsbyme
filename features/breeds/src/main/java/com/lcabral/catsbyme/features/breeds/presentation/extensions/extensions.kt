@@ -34,6 +34,9 @@ fun Fragment.showDetails(breed: Breed) {
             R.string.details_chip_healthy_issues), breed.healthIssues)
         chipVocalisation.text = String.format(resources.getString(
             R.string.details_chip_vocatisation), breed.vocalisation)
+        closeBtn.setOnClickListener {
+            customDialogBuilder.dismiss()
+        }
     }
     customDialogBuilder.show()
 }

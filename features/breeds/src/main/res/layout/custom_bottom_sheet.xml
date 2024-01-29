@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:elevation="8dp"
     app:cardCornerRadius="@dimen/dimen_4"
-    tools:context=".presentation.BreedDetailsFragment">
+    tools:context=".presentation.BreedFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,6 +27,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@tools:sample/last_names" />
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/close_button"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@id/breed_name_detail_tv"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/img_cat"
