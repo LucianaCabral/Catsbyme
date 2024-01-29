@@ -15,7 +15,6 @@ dependencies {
     implementation project(Modules.domain)
     implementation project(Modules.remote)
 
-
     // Libs
     api libs.convertergson
     api libs.gson
@@ -24,4 +23,5 @@ dependencies {
     implementation libs.paginCommonKtx
     implementation libs.pagingRuntimeKtx
     implementation libs.pagingCommon
+    implementation libs.coil
 }

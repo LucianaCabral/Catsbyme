@@ -50,7 +50,8 @@ android {
 dependencies {
     // Libs
     implementation project(Modules.arch)
+    implementation project(Modules.breeds)
     implementation project(Modules.dsTools)
     implementation project(Modules.navigation)
-    implementation project(Modules.breeds)
+    implementation project(Modules.remote)
 }
