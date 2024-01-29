@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.lcabral.catsbyme.libs.dstools.R
 
-
 fun Fragment.showError() {
     val materialAlertDialogBuilder =
         MaterialAlertDialogBuilder(

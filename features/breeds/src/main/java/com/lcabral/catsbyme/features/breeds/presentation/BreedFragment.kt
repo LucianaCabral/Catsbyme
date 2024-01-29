@@ -14,9 +14,9 @@ import androidx.paging.PagingData
 import com.lcabral.catsbyme.core.domain.model.model.Breed
 import com.lcabral.catsbyme.features.breeds.databinding.FragmentBreedBinding
 import com.lcabral.catsbyme.features.breeds.presentation.adapter.BreedAdapter
+import com.lcabral.catsbyme.features.breeds.presentation.extensions.showDetails
 import com.lcabral.catsbyme.features.breeds.presentation.viewmodel.ActionView
 import com.lcabral.catsbyme.features.breeds.presentation.viewmodel.BreedViewModel
-import com.lcabral.catsbyme.libs.arch.extensions.showToast
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -26,10 +26,8 @@ class BreedFragment : Fragment() {
     private var _binding: FragmentBreedBinding? = null
     private val binding get() = _binding!!
     private val viewModel: BreedViewModel by viewModels()
-    private val adapter: BreedAdapter by lazy {
-        BreedAdapter { itemClicked ->
-            viewModel.onAdapterItemClicked(itemClicked)
-        }
+    private val adapter: BreedAdapter by lazy { BreedAdapter { itemClicked ->
+            viewModel.onAdapterItemClicked(itemClicked) }
     }
 
     override fun onCreateView(
@@ -58,10 +56,14 @@ class BreedFragment : Fragment() {
                     }
                 }
             }
-
-            viewModel.action.collect { action ->
-                when (action) {
-                    is ActionView.GoToDetails -> showToast("NOT IMPLEMENT")
+        }
+            lifecycleScope.launch {
+                repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.action.collect { action ->
+                    when (action) {
+                        is ActionView.ItemClicked -> { showDetails(action.breedItem)
+                        }
+                    }
                 }
             }
         }

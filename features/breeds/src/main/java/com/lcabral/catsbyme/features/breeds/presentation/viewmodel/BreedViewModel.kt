@@ -44,6 +44,7 @@ internal class BreedViewModel @Inject constructor(
     }
 
     fun onAdapterItemClicked(breed: Breed) {
-        _action.trySend(ActionView.GoToDetails(breed))
+        _action.trySend(ActionView.ItemClicked(breed))
+        println("clicou viewmodel")
     }
 }
