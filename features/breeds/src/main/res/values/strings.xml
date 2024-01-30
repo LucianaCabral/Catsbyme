@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_breeds_title_rv">Breeds</string>
+    <string name="home_movie_image">movie image</string>
+    <string name="home_search_breed_icon">search_breed_icon</string>
+    <string name="error_message">It´s error</string>
+    <string name="home_network_error">Problem in your connection.Verify and try again</string>
+    <string name="home_service_unavailable_error">The service  is unavailable, try laterr</string>
+    <string name="home_database_error">The was  a problem to acess data. try again</string>
+    <string name="home_generic_error">An error occurred. Try again</string>
+    <string name="home_retry">Retry</string>
+
+    // Details
+    <string name="details_temperament_label">Temperament: %s</string>
+    <string name="details_temperament">Temperament %s</string>
+    <string name="details_life_Span">Life Span %s</string>
+    <string name="details_origin_label">Origin: %s</string>
+    <string name="details_life_span_label">Life Span: %s</string>
+    <string name="details_search_">search_icon</string>
+    <string name="details_information">Catsby Information</string>
+    <string name="details_chip_intelligence">Intelligence: %s</string>
+    <string name="details_chip_child_friendly">Child Friendly: %s</string>
+    <string name="details_chip_social_needs">Social Needs: %s</string>
+    <string name="details_chip_healthy_issues">Healthy Issues: %s</string>
+    <string name="details_chip_rating_intelligence">Rating:: </string>
+    <string name="details_chip_vocatisation">Vocalization: %s</string>
+</resources>

@@ -10,5 +10,9 @@ android {
 }
 
 dependencies {
-// Libs
+// Modules
+    implementation project(Modules.arch)
+
+    // Libs
+    api libs.pagingCommon
 }

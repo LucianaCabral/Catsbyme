@@ -1,8 +1,8 @@
 package com.lcabral.catsbyme.core.data.remote.di
 
-import QueryInterceptor
 import androidx.paging.PagingConfig
 import com.lcabral.catsbyme.core.data.remote.BuildConfig
+import com.lcabral.catsbyme.core.data.remote.network.QueryInterceptor
 import com.lcabral.catsbyme.core.data.remote.network.HttpClient
 import com.lcabral.catsbyme.core.data.remote.network.HttpClientImpl
 import dagger.Module
@@ -14,7 +14,6 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
-import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -41,7 +40,6 @@ internal object RemoteModule {
     }
 
     @Provides
-    @Singleton
     fun provideOkHttpClient(
         queryInterceptor: QueryInterceptor,
         loggingInterceptor: HttpLoggingInterceptor
@@ -62,7 +60,6 @@ internal object RemoteModule {
     }
 
     @Provides
-    @Singleton
     fun provideRetrofit(
         client: OkHttpClient,
         factory: GsonConverterFactory
@@ -75,7 +72,6 @@ internal object RemoteModule {
     }
 
     @Provides
-    @Singleton
     fun provideHttpClient(
         retrofit: Retrofit
     ): HttpClient {

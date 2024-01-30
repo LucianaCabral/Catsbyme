@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
         buildConfigField "String", "API_KEY", keyApiProperties['API_KEY']
-        buildConfigField "String", "API_URL", '"https://https://api.thecatapi.com/"'
+        buildConfigField "String", "API_URL", '"https://api.thecatapi.com/"'
     }
 
     buildFeatures {
@@ -35,6 +35,6 @@ dependencies {
     implementation libs.loggingInterceptor
     implementation libs.okhttp
     implementation libs.paginCommonKtx
-    implementation libs.pagingRuntimeKtx
+    api libs.pagingRuntimeKtx
     implementation libs.pagingCommon
 }

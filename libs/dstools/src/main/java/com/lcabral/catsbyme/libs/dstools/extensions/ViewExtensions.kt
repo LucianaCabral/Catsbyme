@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.lcabral.catsbyme.libs.dstools.R
 
-
 fun Fragment.showError() {
     val materialAlertDialogBuilder =
         MaterialAlertDialogBuilder(
@@ -24,6 +23,6 @@ fun Fragment.showError() {
     materialAlertDialogBuilder.show()
 }
 
-internal fun Fragment.showToast(string: String) {
-    Toast.makeText(requireContext(), string, Toast.LENGTH_SHORT).show()
-}
+    internal fun Fragment.showToast(string: String) {
+        Toast.makeText(requireContext(), string, Toast.LENGTH_SHORT).show()
+    }

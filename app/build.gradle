@@ -39,7 +39,7 @@ android {
 
     defaultConfig {
         buildConfigField "String", "API_KEY", keyApiProperties['API_KEY']
-        buildConfigField "String", "API_URL", '"https://https://api.thecatapi.com/"'
+        buildConfigField "String", "API_URL", '"https://api.thecatapi.com/"'
     }
 
     buildFeatures {
@@ -49,4 +49,9 @@ android {
 
 dependencies {
     // Libs
+    implementation project(Modules.arch)
+    implementation project(Modules.breeds)
+    implementation project(Modules.dsTools)
+    implementation project(Modules.navigation)
+    implementation project(Modules.remote)
 }

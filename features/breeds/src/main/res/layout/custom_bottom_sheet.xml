@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    app:cardCornerRadius="@dimen/dimen_4"
+    tools:context=".presentation.BreedFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/breed_name_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textAppearance="?attr/textAppearanceHeadline3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_24"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/last_names" />
+
+        <ImageButton
+            android:id="@+id/close_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/close_button"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toEndOf="@id/breed_name_detail_tv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_cat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:contentDescription="@string/breed_image_breed"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/breed_name_detail_tv"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/temperament_tv"
+            style="@style/labelDetails"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_cat"
+            app:layout_constraintTop_toBottomOf="@id/breed_name_detail_tv"
+            tools:text="@tools:sample/last_names" />
+
+        <TextView
+            android:id="@+id/origin"
+            style="@style/labelDetails"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginEnd="@dimen/dimen_12"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toEndOf="@id/img_cat"
+            app:layout_constraintTop_toBottomOf="@id/temperament_tv"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:layout_marginVertical="@dimen/dimen_16"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_cat"
+            tools:text="@tools:sample/first_names" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_intelligence"
+            style="@style/chip"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:clickable="false"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chip"
+            app:chipIcon="@drawable/ic_star_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description_tv"
+            tools:text="@tools:sample/first_names" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_child_friendly"
+            style="@style/chip"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:clickable="false"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chip"
+            app:chipIcon="@drawable/ic_star_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_intelligence"
+            tools:text="@tools:sample/first_names" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_social_needs"
+            style="@style/chip"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:clickable="false"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chip"
+            app:chipIcon="@drawable/ic_star_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_child_friendly"
+            tools:text="@tools:sample/first_names" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_healthy_issues"
+            style="@style/chip"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:clickable="false"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chip"
+            app:chipIcon="@drawable/ic_star_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_social_needs"
+            tools:text="@tools:sample/first_names" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_vocalisation"
+            style="@style/chip"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_16"
+            android:clickable="false"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chip"
+            app:chipIcon="@drawable/ic_star_rate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_healthy_issues"
+            tools:text="@tools:sample/first_names" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+

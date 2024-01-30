@@ -1,9 +1,10 @@
+package com.lcabral.catsbyme.core.data.remote.network
+
 import com.lcabral.catsbyme.core.data.remote.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.Response
 
 private const val API_KEY = "api_key"
-
 internal class QueryInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {

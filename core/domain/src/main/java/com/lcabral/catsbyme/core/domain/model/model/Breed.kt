@@ -1,4 +1,4 @@
-package com.lcabral.catsbyme.core.domain.model
+package com.lcabral.catsbyme.core.domain.model.model
 
 data class Breed(
     val adaptability: Int,
@@ -9,7 +9,7 @@ data class Breed(
     val dogFriendly: Int,
     val energyLevel: Int,
     val healthIssues: Int,
-    val id: Int,
+    val id: String,
     val image: String,
     val intelligence: Int,
     val lifeSpan: String,
@@ -18,4 +18,5 @@ data class Breed(
     val socialNeeds: Int,
     val temperament: String,
     val vocalisation: Int,
+    val referenceImageId: String
 )

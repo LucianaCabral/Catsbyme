@@ -13,11 +13,13 @@ android {
 
 dependencies {
     // Libs
-    implementation libs.lifecycleViewmodelKtx
+
     implementation libs.convertergson
-    implementation libs.retrofit
-    implementation libs.gson
-    implementation libs.mockwebServer
-    implementation libs.kotlinReflect
     implementation libs.coroutinesTest
+    implementation libs.gson
+    implementation libs.kotlinReflect
+    implementation libs.lifecycleViewmodelKtx
+    implementation libs.mockwebServer
+    implementation libs.navigation
+    implementation libs.retrofit
 }
