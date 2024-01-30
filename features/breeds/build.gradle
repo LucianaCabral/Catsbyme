@@ -24,4 +24,6 @@ dependencies {
     implementation libs.pagingRuntimeKtx
     implementation libs.pagingCommon
     implementation libs.coil
+
+    testImplementation libs.coreTesting
 }

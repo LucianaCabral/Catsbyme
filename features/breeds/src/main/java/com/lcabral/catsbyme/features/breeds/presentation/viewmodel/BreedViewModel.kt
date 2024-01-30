@@ -42,9 +42,7 @@ internal class BreedViewModel @Inject constructor(
     private fun handleLoading() {
         _state.value = StateView().copy(isLoading = false, breeds = emptyFlow())
     }
-
     fun onAdapterItemClicked(breed: Breed) {
         _action.trySend(ActionView.ItemClicked(breed))
-        println("clicou viewmodel")
     }
 }

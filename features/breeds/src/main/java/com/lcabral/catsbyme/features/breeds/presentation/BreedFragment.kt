@@ -26,8 +26,10 @@ class BreedFragment : Fragment() {
     private var _binding: FragmentBreedBinding? = null
     private val binding get() = _binding!!
     private val viewModel: BreedViewModel by viewModels()
-    private val adapter: BreedAdapter by lazy { BreedAdapter { itemClicked ->
-            viewModel.onAdapterItemClicked(itemClicked) }
+    private val adapter: BreedAdapter by lazy {
+        BreedAdapter { itemClicked ->
+            viewModel.onAdapterItemClicked(itemClicked)
+        }
     }
 
     override fun onCreateView(
@@ -50,18 +52,18 @@ class BreedFragment : Fragment() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.state.value.breeds.collect { state ->
-                    updateList(state)
-                    adapter.addLoadStateListener {
-                        onSuccessMoviesLoading(isStateSaved)
-                    }
+                        updateList(state)
+                        adapter.addLoadStateListener { onSuccessMoviesLoading(isStateSaved) }
                 }
             }
         }
-            lifecycleScope.launch {
-                repeatOnLifecycle(Lifecycle.State.STARTED) {
+
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.action.collect { action ->
                     when (action) {
-                        is ActionView.ItemClicked -> { showDetails(action.breedItem)
+                        is ActionView.ItemClicked -> {
+                            showDetails(action.breedItem)
                         }
                     }
                 }

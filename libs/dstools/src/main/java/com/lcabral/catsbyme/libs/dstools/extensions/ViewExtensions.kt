@@ -23,6 +23,6 @@ fun Fragment.showError() {
     materialAlertDialogBuilder.show()
 }
 
-internal fun Fragment.showToast(string: String) {
-    Toast.makeText(requireContext(), string, Toast.LENGTH_SHORT).show()
-}
+    internal fun Fragment.showToast(string: String) {
+        Toast.makeText(requireContext(), string, Toast.LENGTH_SHORT).show()
+    }

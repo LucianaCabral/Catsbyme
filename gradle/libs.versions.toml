@@ -44,7 +44,8 @@ testAndroidJUnitEx = "1.1.3"
 espressoCore = "3.5.1"
 
 # Custom Test
-core-testing = "2.1.0"
+core-testing = "1.1.1"
+arch-testing = "2.1.0"
 kotlinx-coroutines-test = "1.8.0-RC"
 hilt-android-testing = "2.38.1"
 junitKtx = "1.1.3"
