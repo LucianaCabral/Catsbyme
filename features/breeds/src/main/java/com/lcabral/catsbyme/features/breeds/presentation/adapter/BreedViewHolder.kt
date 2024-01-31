@@ -7,7 +7,6 @@ import coil.load
 import com.lcabral.catsbyme.core.domain.model.model.Breed
 import com.lcabral.catsbyme.features.breeds.databinding.HomeItemBreedBinding
 
-
 internal typealias ItemClicked = (Breed) -> Unit
 
 internal class BreedViewHolder(
@@ -19,7 +18,6 @@ internal class BreedViewHolder(
     fun bindView(breed: Breed) {
         itemView.apply {
             with(binding) {
-                originTv.text = breed.origin
                 breedTv.text = breed.name
                 imageTv.load(
                     "https://cdn2.thecatapi.com/images/" +

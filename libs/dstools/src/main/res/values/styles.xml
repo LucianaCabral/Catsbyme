@@ -16,10 +16,15 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="movie_breed_img">
+    <style name="breed_img">
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">100dp</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:contentDescription">cat image</item>
+    </style>
+
+    <style name="imageCircle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>
