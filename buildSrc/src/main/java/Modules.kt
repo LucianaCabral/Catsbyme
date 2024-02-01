@@ -6,6 +6,7 @@ object Modules {
 
         // Features
         const val breeds = ":features:breeds"
+        const val search = ":features:search"
 
         // Libs
         const val arch = ":libs:arch"
