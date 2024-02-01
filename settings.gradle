@@ -13,15 +13,17 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CatsByme"
-include ':app'
+include ':app',
 
 // Core
-include ':core:data:local',
+        ':core:common:navigation',
+        ':core:data:local',
         ':core:data:remote',
-        ':core:domain'
+        ':core:domain',
 
+// Features
+        ':features:breeds',
+        ':features:search',
 // Libs
-include ':libs:arch',
+        ':libs:arch',
         ':libs:dstools'
-include ':core:common:navigation'
-include ':features:breeds'
