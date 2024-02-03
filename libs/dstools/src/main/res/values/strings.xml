@@ -11,4 +11,6 @@
     <string name="ds_dialog_feedback_message_error">Please wait a little bit!</string>
     <string name="ds_dialog_icon_cancel">Cancel</string>
     <string name="ds_dialog_feedback_error_canceled">Cancelled</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

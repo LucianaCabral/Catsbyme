@@ -8,8 +8,7 @@ internal interface SearchService {
 
     @GET("v1/breeds/search")
     suspend fun searchBreeds(
-        @Query("q") id: String
-    ): List<BreedResponse>
+        @Query("q") id: String): List<BreedResponse>
 }
 
 

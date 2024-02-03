@@ -8,6 +8,9 @@ internal class SearchUseCase(
     private val searchRepository: SearchRepository
 ) {
     operator fun invoke(query:String): Flow<List<Search>> {
-        return searchRepository.searchImages(query)
+        return searchRepository.searchImages(query).apply {
+            println("usecase = $query")
+            
+        }
     }
 }

@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/breed_nav_graph"
-    app:startDestination="@id/breed_fragment">
+    app:startDestination="@id/breedFragment">
 
     <fragment
-        android:id="@+id/breed_fragment"
+        android:id="@+id/breedFragment"
         android:name="com.lcabral.catsbyme.features.breeds.presentation.BreedFragment"
-        android:label="fragment_breed"
+        android:label="breedFragment"
         tools:layout="@layout/fragment_breed"/>
 </navigation>

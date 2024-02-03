@@ -26,3 +26,21 @@ fun Fragment.showError() {
     internal fun Fragment.showToast(string: String) {
         Toast.makeText(requireContext(), string, Toast.LENGTH_SHORT).show()
     }
+
+fun Fragment.showErrorInternet() {
+    val materialAlertDialogBuilder =
+        MaterialAlertDialogBuilder(
+            requireContext(),
+            androidx.constraintlayout.widget.R.style.AlertDialog_AppCompat
+        )
+    materialAlertDialogBuilder
+        .setTitle(getString(R.string.ds_dialog_title_feedback_error))
+        .setTitle(getString(R.string.ds_dialog_title_feedback_error))
+        .setMessage(getString(R.string.ds_dialog_feedback_message_error))
+        .setIcon(R.drawable.ic_error)
+        .setNegativeButton(getString(R.string.ds_dialog_title_feedback_error)) { dialog, which ->
+            showToast(getString(R.string.ds_dialog_feedback_error_canceled))
+        }
+
+    materialAlertDialogBuilder.show()
+}
