@@ -49,8 +49,7 @@ This project has been developed in Android Studio version:
 
 ## Screens
 
-<img src = "Screenshot_home_list_cats.png"  widt="200" height="300 >
-<img src= "Screenshot_details_cats.png" widt="200" height="300">
+<img src = "images/Screenshot_home_list_cats.png"  widt="200" height="300">  <img src = "images/Screenshot_details_cats.png" widt="200" height="300">
 
 ## Manager Project and Architecture
  * [Trello](https://trello.com/b/rLvtzPrn/katsbyme)
