@@ -1,7 +1,7 @@
 # CatsByme :smile_cat:  :construction:
 This project is a Poc based in Cat Api: https://developers.thecatapi.com/, 
 was built with Android Studio Dolphin, with clean architecture in a multi-modules structure. 
-The core module is the center and other modules branch off from it. The data module wraps remote,
+The core module is the center and other modules branch off from it. The data module wraps remote
 and local modules. There's also a common and a domain module inside the core. 
 The features module outside of the core uses the domain.
 
@@ -49,7 +49,7 @@ This project has been developed in Android Studio version:
 
 ## Screens
 
-<img src = "Screenshot_home_list_cats.png"  widt="200" height="300 />
+<img src = "Screenshot_home_list_cats.png"  widt="200" height="300 >
 <img src= "Screenshot_details_cats.png" widt="200" height="300">
 
 ## Manager Project and Architecture
