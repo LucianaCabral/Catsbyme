@@ -1,0 +1,14 @@
+<resources>
+    <string name="search_hint_edt">search</string>
+    <string name="show_list_search">show list search</string>
+    <string name="search_image_url">https://cdn2.thecatapi.com/images/</string>
+    <string name="search_extension_image">.jpg</string>
+    <string name="search_unknown_error">There was an error processing your request. Please try again.</string>
+    <string name="search_no_connection">Something went wrong!</string>
+    <string name="search_no_results">Ops! "No results found for query: s% query".</string>
+    <string name="search">Search</string>
+    <string name="search_error_connection">Something went wrong!</string>
+    <string name="button_close">Close</string>
+    <string name="search_input">search</string>
+
+</resources>

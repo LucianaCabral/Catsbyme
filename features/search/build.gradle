@@ -1,0 +1,21 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+android {
+    namespace 'com.lcabral.catsbyme.features.breeds'
+}
+
+dependencies {
+    // Modules
+    implementation project(Modules.domain)
+    implementation project(Modules.remote)
+    implementation project(Modules.arch)
+    implementation project(Modules.dsTools)
+    implementation libs.coil
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+}

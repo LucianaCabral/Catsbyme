@@ -24,12 +24,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        navHostFragment =
-            supportFragmentManager.findFragmentById(binding.containerMain.id) as NavHostFragment
+        navHostFragment = supportFragmentManager.
+        findFragmentById(binding.containerMain.id) as NavHostFragment
+
         val navController = navHostFragment.navController
 
         binding.bottomNavigation.apply {
             setupWithNavController(navController)
+
+            window.statusBarColor = Color.BLACK
         }
     }
 }

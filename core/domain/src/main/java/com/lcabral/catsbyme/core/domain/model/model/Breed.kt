@@ -20,3 +20,10 @@ data class Breed(
     val vocalisation: Int,
     val referenceImageId: String
 )
+
+data class Image(
+    val height: Long,
+    val id: String,
+    val url: String,
+    val width: Long,
+)
