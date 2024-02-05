@@ -49,8 +49,8 @@ This project has been developed in Android Studio version:
 
 ## Screens
 
-<img src = "images/Screenshot_home_list_cat.png"  widt ="200" height="300">  <img src = "images/Screenshot_breeds_details.png" widt ="200" height="300">
-<img src="images/Screenshot_screen_search.png" widt ="200" height="300"> <img src = "images/ScreenShot_search_result.png" widt="200" height="300">
+<img src = "images/Screenshot_home_list_cat.png"  widt ="200" height="300">  <img src = "images/Screenshot_breed_details.png" widt ="200" height="300">
+<img src ="images/Screenshot_screen_search.png" widt ="200" height="300">  <img src = "images/Screenshot_search_result.png" widt="200" height="300">
 
 ## Manager Project and Architecture
  * [Trello](https://trello.com/b/rLvtzPrn/katsbyme)
