@@ -25,4 +25,5 @@
     <string name="details_chip_rating_intelligence">Rating:: </string>
     <string name="details_chip_vocatisation">Vocalization: %s</string>
     <string name="favorite_item">favorite_item</string>
+    <string name="home_list_breed">HomeListBreed</string>
 </resources>

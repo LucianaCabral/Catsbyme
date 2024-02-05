@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigation.apply {
             setupWithNavController(navController)
+
             window.statusBarColor = Color.BLACK
         }
     }
 }
-

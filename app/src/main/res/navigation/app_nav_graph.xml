@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_nav_graph"
-    app:defaultNavHost="true"
-    app:navGraph="@navigation/app_nav_graph"
-    app:startDestination="@id/breed_nav_graph">
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/home">
 
     <include app:graph="@navigation/breed_nav_graph" />
     <include app:graph="@navigation/search_nav_graph" />
-
-    <fragment
-        android:id="@+id/breedFragment"
-        android:name="com.lcabral.catsbyme.features.breeds.presentation.BreedFragment"
-        android:label="breedFragment"
-        tools:layout="@layout/fragment_breed"/>
-
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.lcabral.catsbyme.features.search.presentation.SearchFragment"
-        android:label="searchFragment"
-        tools:layout="@layout/fragment_search" />
 </navigation>
