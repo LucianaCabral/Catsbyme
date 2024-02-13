@@ -1,0 +1,20 @@
+plugins {
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
+}
+
+apply from: "$rootDir/plugins/android-build.gradle"
+
+android {
+    namespace 'com.lcabral.catsbyme.features.images'
+}
+
+dependencies {
+    // Modules
+    implementation project(Modules.arch)
+    implementation project(Modules.dsTools)
+    implementation project(Modules.remote)
+
+    // Libs
+    implementation libs.coil
+}
