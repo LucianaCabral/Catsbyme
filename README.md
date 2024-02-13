@@ -51,6 +51,7 @@ This project has been developed in Android Studio version:
 
 <img src = "images/Screenshot_home_list_cat.png"  widt ="200" height="300">  <img src = "images/Screenshot_breed_details.png" widt ="200" height="300">
 <img src ="images/Screenshot_screen_search.png" widt ="200" height="300">  <img src = "images/Screenshot_search_result.png" widt="200" height="300">
+<img src ="images/Screenshot_random_photos.png" widt ="200" height="300">
 
 ## Manager Project and Architecture
  * [Trello](https://trello.com/b/rLvtzPrn/katsbyme)
