@@ -7,7 +7,7 @@
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="@string/app_bottom_navigation_home"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="collapseActionView" />
 
     <item
         android:id="@+id/search"
@@ -17,10 +17,10 @@
         app:showAsAction="collapseActionView" />
 
     <item
-        android:id="@+id/favoriteFragment"
+        android:id="@+id/photos"
         android:enabled="true"
-        android:icon="@drawable/ic_favorite"
-        android:title="@string/app_bottom_navigation_favorites"
-        app:showAsAction="ifRoom" />
+        android:icon="@drawable/ic_image"
+        android:title="@string/app_photos"
+        app:showAsAction="collapseActionView" />
 
 </menu>

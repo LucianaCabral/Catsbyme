@@ -23,7 +23,9 @@ include ':app',
 
 // Features
         ':features:breeds',
+        ':features:images',
         ':features:search',
 // Libs
         ':libs:arch',
         ':libs:dstools'
+

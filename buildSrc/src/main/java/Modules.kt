@@ -6,10 +6,11 @@ object Modules {
 
         // Features
         const val breeds = ":features:breeds"
+        const val photos = ":features:images"
         const val search = ":features:search"
 
         // Libs
         const val arch = ":libs:arch"
         const val dsTools = ":libs:dstools"
-
 }
+

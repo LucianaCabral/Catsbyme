@@ -54,5 +54,6 @@ dependencies {
     implementation project(Modules.dsTools)
     implementation project(Modules.navigation)
     implementation project(Modules.remote)
+    implementation project(Modules.photos)
     implementation project(Modules.search)
 }

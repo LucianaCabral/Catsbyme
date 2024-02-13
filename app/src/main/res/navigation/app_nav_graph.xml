@@ -6,4 +6,6 @@
 
     <include app:graph="@navigation/breed_nav_graph" />
     <include app:graph="@navigation/search_nav_graph" />
+    <include app:graph="@navigation/photos_nav_graph" />
+
 </navigation>
